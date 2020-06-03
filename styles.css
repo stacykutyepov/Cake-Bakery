@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    --accent-font: "Bilbo", cursive;
+    --reg-font: "Molengo", sans-serif;
+    --red-color: #9f0311;
+    --grey-color: #e9eaea;
+    font-family: var(--reg-font);
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.cake-bakery {
+    font-family: var(--accent-font);
+    color: var(--red-color);
+}
+
+.phone-number {
+    font-weight: 600;
+}
+
+.menu-items {
+    padding: 0 30px;
+    font-family: var(--reg-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+    list-style-type: none;
+    flex: 2;
+}
+
+.main-page {
+    background-color: var(--grey-color);
+    height: 700px;
+}
+
+.main-container {
+    padding: 60px 0px;
+    letter-spacing: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-page-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--accent-font);
+    font-size: 4rem;
+}
+
+.button {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+}
+.button:hover {
+    background-color: var(--red-color);
+    color: #ffffff;
+}
+
+.catalog-page {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.catalog-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.intro-text {
+    margin: auto;
+    font-family: var(--accent-font);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.catalog-menu {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.catalog-menu > li {
+    padding: 0 20px;
+}
+
+.catalog-preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 20px;
+}
+
+.image {
+    height: 200px;
+    border: 1px solid black;
+}
+
+.description {
+    background-color: var(--red-color);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 1px solid black;
+}
+
+.catalog-p-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.current-page {
+    color: var(--red-color);
+    font-size: 1.6rem;
+}
+
+.arrow {
+    color: var(--red-color);
+    margin: 0 10px;
+}
+
+.about-page {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+}
