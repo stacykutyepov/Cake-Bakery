@@ -48,8 +48,11 @@ body {
 }
 
 .main-page {
-    background-color: var(--grey-color);
-    height: 700px;
+    background-image: url(./src/img/strawberry.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
 }
 
 .main-container {
@@ -138,14 +141,14 @@ body {
 .image {
     border: 1px solid black;
 }
+.grid-row {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
 
 .description {
     background-color: var(--red-color);
-    grid-column: 1/2;
-    grid-row: 1/3;
-    border: 1px solid black;
     text-align: center;
-    word-wrap: break-word;
     color: white;
 }
 
@@ -154,19 +157,21 @@ body {
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
-
 .description > p {
-    overflow-wrap: break-word;
+    line-height: 2rem;
 }
+
 .description > ul {
     padding: 0px;
     margin-top: 40px;
 }
+
 .description > ul > li {
     list-style-type: none;
     list-style: none;
     padding-bottom: 0.6rem;
 }
+
 .catalog-p-number {
     display: flex;
     flex-direction: row;
@@ -190,20 +195,18 @@ body {
 }
 
 .about-page {
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
-    margin-bottom: 20px;
     max-width: 925px;
 }
 
 .p-text {
     width: 50%;
     text-align: center;
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
     line-height: 2rem;
     font-size: 1.2rem;
 }
@@ -238,12 +241,13 @@ body {
 }
 
 .review-page {
+    margin: 40px auto;
     max-width: 925px;
     display: flex;
     align-items: center;
     align-content: space-around;
-    margin: 40px auto;
 }
+
 .review-carousel {
     display: flex;
     flex-direction: column;
@@ -251,3 +255,58 @@ body {
     align-content: center;
 }
 
+.contact-page {
+    margin: 40px auto;
+    max-width: 925px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-background {
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-image: url(./src/img/contact-us2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 380px;
+    background-color: var(--red-color);
+    width: 35%;
+    margin-right: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+.contact-info > div {
+    display: flex;
+    align-items: baseline;
+    margin-left: 40px;
+}
+.contact-info > div > p {
+    margin-left: 40px;
+    line-height: 2rem;
+}
+.contact-info > p:first-child {
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.application-page {
+    margin: 40 auto;
+    max-width: 925px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
