@@ -105,9 +105,21 @@ body {
     color: var(--red-color);
 }
 
+.button-red {
+    background-color: var(--red-color);
+    color: #ffffff;
+}
+
+
 .button:hover {
     background-color: var(--red-color);
     color: #ffffff;
+}
+.button-red:hover {
+    border: 1px solid #ffffff;
+    color: var(--red-color);
+    background-color: #ffffff;
+
 }
 
 .button-inverse {
@@ -220,10 +232,6 @@ body {
 
 .arrow path {
     fill: var(--red-color);
-}
-
-.arrow:hover path {
-    
 }
 
 .about-page {
