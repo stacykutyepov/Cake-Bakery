@@ -1,0 +1,106 @@
+[
+    [
+        {
+            "id": "biscuits03",
+            "category": "biscuits",
+            "imageUrl": "./src/img/catalog-preview/biscuits-03.jpeg"
+        },
+
+        {
+            "id": "cake07",
+            "category": "cakes",
+            "imageUrl": "./src/img/catalog-preview/cake-07.jpeg"
+        },
+        {
+            "id": "biscuits01",
+            "category": "biscuits",
+            "imageUrl": "./src/img/catalog-preview/biscuits-01.jpeg"
+        },
+
+        {
+            "id": "cupcake01",
+            "category": "cupcakes",
+            "imageUrl": "./src/img/catalog-preview/cupcake-01.jpeg"
+        },
+
+        {
+            "id": "cake10",
+            "category": "cakes",
+            "imageUrl": "./src/img/catalog-preview/cake-10.jpeg"
+        },
+
+        {
+            "id": "cake11",
+            "category": "cakes",
+            "imageUrl": "./src/img/catalog-preview/cake-11.jpeg"
+        }
+    ],
+    [
+        {
+            "id": "cake04",
+            "category": "cakes",
+            "imageUrl": "./src/img/catalog-preview/cake-04.jpeg"
+        },
+
+        {
+            "id": "biscuits02",
+            "category": "biscuits",
+            "imageUrl": "./src/img/catalog-preview/biscuits-02.jpeg"
+        },
+
+        {
+            "id": "biscuits04",
+            "category": "biscuits",
+            "imageUrl": "./src/img/catalog-preview/biscuits-04.jpeg"
+        },
+        {
+            "id": "biscuits05",
+            "category": "biscuits",
+            "imageUrl": "./src/img/catalog-preview/biscuits-05.jpeg"
+        },
+        {
+            "id": "biscuits06",
+            "category": "biscuits",
+            "imageUrl": "./src/img/catalog-preview/biscuits-06.jpeg"
+        }
+    ],
+    [
+        {
+            "id": "cake03",
+            "category": "cakes",
+            "imageUrl": "./src/img/catalog-preview/cake-03.jpeg"
+        },
+        {
+            "id": "cake06",
+            "category": "cakes",
+            "imageUrl": "./src/img/catalog-preview/cake-06.jpeg"
+        },
+
+        {
+            "id": "cupcake02",
+            "category": "cupcakes",
+            "imageUrl": "./src/img/catalog-preview/cupcake-02.jpeg"
+        },
+        {
+            "id": "cupcake03",
+            "category": "cupcakes",
+            "imageUrl": "./src/img/catalog-preview/cupcake-03.jpeg"
+        },
+
+        {
+            "id": "cupcake05",
+            "category": "cupcakes",
+            "imageUrl": "./src/img/catalog-preview/cupcake-05.jpeg"
+        },
+        {
+            "id": "cupcake06",
+            "category": "cupcakes",
+            "imageUrl": "./src/img/catalog-preview/cupcake-06.jpeg"
+        },
+        {
+            "id": "cupcake07",
+            "category": "cupcakes",
+            "imageUrl": "./src/img/catalog-preview/cupcake-07.jpeg"
+        }
+    ]
+]
