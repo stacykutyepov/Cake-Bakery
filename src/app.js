@@ -1,6 +1,7 @@
 const catalogPreview = document.querySelector('.catalog-preview');
 const catalogMenu = document.querySelector('.catalog-menu');
 const otherPages = document.querySelector('.other-pages');
+const ourCatalogText = document.querySelector('.intro-text');
 
 
 let DATA = null;
@@ -44,10 +45,9 @@ const catalogFilter = (event) => {
 }
 
 
-
-catalogMenu.addEventListener('click', catalogFilter);
-
 const init = () => {
+    
+    catalogMenu.addEventListener('click', catalogFilter);
 
     getData("./src/db/catalog.json")
         .then(function (data) {

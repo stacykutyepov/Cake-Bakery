@@ -149,6 +149,11 @@ body {
     font-family: var(--accent-font);
     font-size: 2rem;
     letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.intro-text:hover {
+color: var(--red-color);
 }
 
 .catalog-menu {
