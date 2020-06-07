@@ -10,6 +10,22 @@ body {
     flex-direction: column;
     margin: 0 auto;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* .to-order {
+    font-family: var(--reg-font);
+    color: white;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+}
+.to-order:hover {
+    color: var(--red-color);
+} */
+
 .phone-icon {
     background-repeat: no-repeat;
     background-position: center;
@@ -29,6 +45,7 @@ body {
 .phone-icon:hover path {
     fill: var(--red-color);
 }
+
 .header {
     margin: 0 auto;
     /* width: 70%; */
@@ -72,7 +89,7 @@ body {
 }
 
 .main-page {
-    background-image: url(./src/img/strawberry.jpeg);
+    background-image: url(./src/img/strawberry.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -103,7 +120,7 @@ body {
     margin-top: 20px;
     padding: 10px 40px;
     border: 1px solid var(--red-color);
-    color: var(--red-color);
+    /* color: var(--red-color); */
 }
 
 .button-red {
@@ -153,7 +170,7 @@ body {
 }
 
 .intro-text:hover {
-color: var(--red-color);
+    color: var(--red-color);
 }
 
 .catalog-menu {
@@ -181,7 +198,7 @@ color: var(--red-color);
 }
 
 .catalog-image {
-    background-image: url(./src/img/strawberry.jpeg);
+    background-image: url(./src/img/strawberry.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -190,24 +207,24 @@ color: var(--red-color);
 
 .catalog-image:hover {
     -webkit-animation: flash 1.5s;
-	animation: flash 2s;
+    animation: flash 2s;
 }
 
 @-webkit-keyframes flash {
-	0% {
-		opacity: .5;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @keyframes flash {
-	0% {
-		opacity: .4;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .grid-row {
@@ -334,7 +351,7 @@ color: var(--red-color);
 }
 
 .speacial-offer-image {
-    background-image: url(./src/img/special-offer.jpeg);
+    background-image: url(./src/img/special-offer.jpg);
     background-size: cover;
     background-position: 40% 60%;
     grid-column: 2/4;
@@ -368,7 +385,7 @@ color: var(--red-color);
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-image: url(./src/img/contact-us2.jpeg);
+    background-image: url(./src/img/contact-us2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
