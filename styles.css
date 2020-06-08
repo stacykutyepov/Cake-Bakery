@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     --accent-font: "Bilbo", cursive;
-    --reg-font: 'Montserrat', sans-serif;
+    --reg-font: "Montserrat", sans-serif;
     --red-color: #9f0311;
     --grey-color: #e9eaea;
     font-family: var(--reg-font);
@@ -15,7 +15,6 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
 
 .phone-icon {
     margin: auto;
@@ -110,16 +109,19 @@ html {
 }
 
 .button {
+    outline: none;
     cursor: pointer;
     text-decoration: none;
 }
 
 .button:hover {
     background-color: var(--red-color);
-    color: var(--grey-color)
+    color: var(--grey-color);
 }
 
 .button-inverse {
+    outline: none;
+
     padding: 10px 40px;
     margin: 0 auto;
     background-color: var(--red-color);
@@ -134,6 +136,8 @@ html {
 }
 
 .button-red {
+    outline: none;
+
     padding: 10px 70px;
     margin-top: 20px;
     border: 1px solid var(--red-color);
@@ -146,8 +150,6 @@ html {
     color: var(--red-color);
     background-color: var(--grey-color);
 }
-
-
 
 .catalog-page {
     margin: 0 auto;
@@ -355,7 +357,6 @@ html {
     background-color: var(--red-color);
 }
 
-
 .speacial-offer-image {
     background-image: url(./src/img/special-offer.jpg);
     background-size: cover;
@@ -418,6 +419,7 @@ html {
     margin-left: 40px;
     line-height: 2rem;
 }
+
 .contact-info > p:first-child {
     text-align: center;
     font-family: var(--accent-font);
@@ -438,7 +440,6 @@ html {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    
 }
 
 .application-form {
@@ -450,6 +451,17 @@ html {
 
 .application-form > input:last-child {
     margin: 10px auto;
+}
+
+.wrong-email {
+    display: none;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--red-color);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--grey-color) inset;
 }
 
 .input {
@@ -479,7 +491,7 @@ html {
     color: var(--grey-color);
 }
 
-.white > a{
+.white > a {
     color: var(--grey-color);
 }
 

@@ -7,8 +7,9 @@ const arrowPrevious = document.querySelector('.arrow-previous');
 const currentPage = document.querySelector('.current-page');
 const sendApplication = document.querySelector('.send');
 const applicationForm = document.querySelector('.application-form');
-const applicationText = document.querySelector('.application-text')
-
+const applicationText = document.querySelector('.application-text');
+const emailInput = document.getElementById('user-email')
+const wrongEmail = document.querySelector('.wrong-email');
 
 let DATA = null;
 let pageNum = 0;
@@ -74,14 +75,37 @@ const prevPage = (data) => {
     }
 };
 
+const validEmail = (str) => {
+    const emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    return emailRegex.test(str);
+};
+
+const resetApplicationForm = () => {
+    applicationText.style.color = "";
+    document.getElementById('user-name').value = "";
+    document.getElementById('user-surname').value = "";
+    document.getElementById('user-phone').value = "";
+    emailInput.value = "";
+    applicationForm.style.display = "flex";
+    wrongEmail.style.display = "none"
+}
+
 const succesfullySent = (event) => {
     event.preventDefault();
-    applicationForm.style.display = "none";
-    applicationText.textContent =  "Thank you! Your Application Has Been Sent Succesfully!"
-    setTimeout(() => {
-        applicationText.textContent = "Application"
-        applicationForm.style.display = "flex";
-    }, 3000)
+    if (validEmail(emailInput.value)) {
+        console.log('checked');
+        applicationText.style.color = "#9f0311";
+        applicationText.textContent = "Thank you! Your Application Has Been Sent Succesfully!";
+        resetApplicationForm();
+        setTimeout(() => {
+            applicationText.textContent = "Application";
+
+        }, 3000)
+    } else {
+        wrongEmail.style.display = "flex";
+    }
+
+
 
     console.log('sent')
 }
