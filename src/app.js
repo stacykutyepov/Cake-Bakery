@@ -5,6 +5,9 @@ const ourCatalogText = document.querySelector('.intro-text');
 const arrowNext = document.querySelector('.arrow-next');
 const arrowPrevious = document.querySelector('.arrow-previous');
 const currentPage = document.querySelector('.current-page');
+const sendApplication = document.querySelector('.send');
+const applicationForm = document.querySelector('.application-form');
+const applicationText = document.querySelector('.application-text')
 
 
 let DATA = null;
@@ -52,13 +55,13 @@ const uploadCatalog = (data, num) => {
         createCatalogPreview(item);
     });
     otherPages.innerText = `0 ${data.length}`;
-    currentPage.innerText = `0${num +1}/`;
+    currentPage.innerText = `0${num + 1}/`;
 };
 
 const nextPage = (data) => {
     if (pageNum < data.length - 1) {
         return pageNum += 1;
-    }else{
+    } else {
         return pageNum = 0;
     }
 };
@@ -66,10 +69,25 @@ const nextPage = (data) => {
 const prevPage = (data) => {
     if (pageNum <= data.length - 1 && pageNum != 0) {
         return pageNum -= 1;
-    }else{
+    } else {
         return pageNum = data.length - 1;
     }
 };
+
+const succesfullySent = (event) => {
+    event.preventDefault();
+    applicationForm.style.display = "none";
+    applicationText.textContent =  "Thank you! Your Application Has Been Sent Succesfully!"
+    setTimeout(() => {
+        applicationText.textContent = "Application"
+        applicationForm.style.display = "flex";
+    }, 3000)
+
+    console.log('sent')
+}
+
+sendApplication.addEventListener('click', succesfullySent);
+
 
 const init = () => {
 
