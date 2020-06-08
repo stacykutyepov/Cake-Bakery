@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     --accent-font: "Bilbo", cursive;
-    --reg-font: "Molengo", sans-serif;
+    --reg-font: 'Montserrat', sans-serif;
     --red-color: #9f0311;
     --grey-color: #e9eaea;
     font-family: var(--reg-font);
@@ -15,16 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .to-order {
-    font-family: var(--reg-font);
-    color: white;
-    cursor: pointer;
-    list-style-type: none;
-    text-decoration: none;
-}
-.to-order:hover {
-    color: var(--red-color);
-} */
 
 .phone-icon {
     background-repeat: no-repeat;
@@ -76,15 +66,17 @@ html {
     flex-direction: row;
     justify-content: space-around;
     cursor: pointer;
-    list-style-type: none;
     flex: 2;
 }
 
-.menu-items > li {
+.menu-items > a {
     margin: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
 }
 
-.menu-items > li:hover {
+.menu-items > a:hover {
     box-shadow: 0px 1px var(--red-color);
 }
 
@@ -99,7 +91,6 @@ html {
 
 .main-container {
     padding: 60px 0px;
-    letter-spacing: 0.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,41 +103,48 @@ html {
     align-items: center;
     font-family: var(--accent-font);
     font-size: 4rem;
+    letter-spacing: 0.4rem;
 }
 
 .button {
-    background-color: Transparent;
     cursor: pointer;
-    margin-top: 20px;
     padding: 10px 40px;
-    border: 1px solid var(--red-color);
-    /* color: var(--red-color); */
-}
-
-.button-red {
-    background-color: var(--red-color);
-    color: #ffffff;
+    text-decoration: none;
 }
 
 .button:hover {
     background-color: var(--red-color);
     color: #ffffff;
 }
-.button-red:hover {
-    border: 1px solid #ffffff;
-    color: var(--red-color);
-    background-color: #ffffff;
-}
 
 .button-inverse {
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--red-color);
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color);
 }
 
 .button-inverse:hover {
     background-color: #ffffff;
+    border: 1px solid var(--red-color);
     color: var(--red-color);
 }
+
+.button-red {
+    margin-top: 20px;
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color);
+    color: var(--grey-color);
+}
+
+.button-red:hover {
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+    background-color: #ffffff;
+}
+
+
 
 .catalog-page {
     margin: 0 auto;
@@ -162,7 +160,7 @@ html {
 }
 
 .intro-text {
-    /* margin: 20px auto; */
+    margin: 20px auto;
     font-family: var(--accent-font);
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -235,7 +233,7 @@ html {
 .description {
     background-color: var(--red-color);
     text-align: center;
-    color: white;
+    color: var(--grey-color);
 }
 
 .description p:first-child {
@@ -343,12 +341,16 @@ html {
     grid-template-columns: repeat(3, minmax(298px, 1fr));
     grid-template-rows: minmax(298px, 1fr);
     grid-gap: 1em;
-    margin-bottom: 20px;
 }
 
 .special-offer-text {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
     background-color: var(--red-color);
 }
+
 
 .speacial-offer-image {
     background-image: url(./src/img/special-offer.jpg);
@@ -401,7 +403,7 @@ html {
     margin-right: 40px;
     margin-top: 60px;
     margin-bottom: 60px;
-    color: #ffffff;
+    color: var(--grey-color);
 }
 .contact-info > div {
     display: flex;
@@ -421,11 +423,10 @@ html {
 
 .application-page {
     margin: 40px auto;
+    padding-bottom: 20px;
     max-width: 925px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
     max-width: 525px;
     width: 100%;
 }
@@ -434,16 +435,18 @@ html {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    
 }
 
 .application-form {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .application-form > input:last-child {
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .input {
@@ -467,13 +470,20 @@ html {
     align-content: center;
     align-items: baseline;
 }
+
 .white {
-    color: white;
+    color: var(--grey-color);
+}
+
+.white > a{
+    color: var(--grey-color);
 }
 
 .footer-icons {
-    margin-left: 10px;
-    border: 1px solid white;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 20px;
+    fill: var(--grey-color);
     width: 20px;
     height: 20px;
 }
