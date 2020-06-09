@@ -54,6 +54,8 @@ html {
 }
 
 .cake-bakery {
+    margin-top: 20px;
+    margin-bottom: 0;
     font-family: var(--accent-font);
     color: var(--red-color);
 }
@@ -189,6 +191,7 @@ html {
     cursor: pointer;
     margin: 0 20px;
 }
+
 .catalog-menu > li:hover {
     box-shadow: 0px 1px var(--red-color);
 }
@@ -342,7 +345,7 @@ html {
 
 /* Specila offer */
 .special-offer-page {
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: 925px;
     display: grid;
     grid-template-columns: repeat(3, minmax(298px, 1fr));
@@ -357,6 +360,8 @@ html {
     background-color: var(--red-color);
 }
 
+/* Review Swiper */
+
 .speacial-offer-image {
     background-image: url(./src/img/special-offer.jpg);
     background-size: cover;
@@ -364,20 +369,75 @@ html {
     grid-column: 2/4;
 }
 
+.swiper-container {
+    width: 725px;
+    height: 350px;
+}
+
+#button-reviews {
+    color: var(--red-color);
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 66%;
+    height: 100%;
+}
+
+.review-container > p {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+.person-name{
+    font-size: 2rem;
+    color: var(--red-color);
+    font-family: var(--accent-font);
+}
+
+.cake-icon {
+    width: 40px;
+    fill: var(--red-color);
+}
+
+
+/* 
 .review-page {
     margin: 40px auto;
-    max-width: 925px;
+    max-width: 625px;
     display: flex;
     align-items: center;
     align-content: space-around;
 }
+*/
 
-.review-carousel {
+/* .review {
+    line-height: 2rem;
+    text-align: center;
+} */
+
+
+/* .review-carousel {
+    border: 2px solid black;
+    width: 550px;
+    height: 330px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-}
+    overflow: hidden;
+} */
 
 .contact-page {
     margin: 40px auto;
@@ -428,8 +488,8 @@ html {
 }
 
 .application-page {
-    margin: 40px auto;
-    padding-bottom: 20px;
+    margin: 20px auto;
+    padding-bottom: 40px;
     max-width: 725px;
     display: flex;
     flex-direction: column;

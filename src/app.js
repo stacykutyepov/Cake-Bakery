@@ -104,9 +104,6 @@ const succesfullySent = (event) => {
     } else {
         wrongEmail.style.display = "flex";
     }
-
-
-
     console.log('sent')
 }
 
@@ -129,7 +126,17 @@ const init = () => {
 
         }
         );
-}
+};
+
+const mySwiper = new Swiper('.swiper-container', {
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    speed: 900
+});
+
 
 init();
 
