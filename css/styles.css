@@ -603,7 +603,7 @@ input:-webkit-autofill {
     }
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
     .header{
         margin: 0;
         display: flex;
