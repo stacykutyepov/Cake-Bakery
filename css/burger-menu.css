@@ -116,8 +116,8 @@ body {
  */
 #menu {
     position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -70px;
+    width: 350px;
+    margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
 
@@ -147,6 +147,7 @@ body {
 
 
 @media (max-width: 578px) {
+
     #menuToggle {
         display: block;
     }
