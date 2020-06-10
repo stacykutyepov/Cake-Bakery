@@ -26,11 +26,12 @@ html {
 }
 
 .ig-icon {
-    margin: auto;
+    background-image: url(./svg-icons/ig-color.svg);
+    width: 20px;
+    height: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20px;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
     cursor: pointer;
 }
 
@@ -50,6 +51,7 @@ html {
     margin-left: 20px;
     display: flex;
     align-content: flex-end;
+    align-items: flex-end;
 }
 
 .cake-bakery {
@@ -377,14 +379,13 @@ html {
 
 #button-reviews {
     color: var(--red-color);
+    outline: none;
 }
 
 .center-item {
     display: flex;
     justify-content: center;
 }
-
-
 
 .review-container {
     display: flex;
@@ -594,14 +595,27 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 578px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        align-content: center;
+        padding: 10px 40px;
+    }
+
     .main-page {
         background-position: bottom;
     }
-    
+
+    .menu-items {
+        display: none;
+    }
+
     .catalog-preview {
         display: grid;
-        grid-template-columns: repeat(2, minmax(170px, 1fr));
-        grid-template-rows: repeat(3, minmax(170px, 1fr));
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: repeat(3, minmax(150px, 1fr));
     }
     .grid-row {
         display: none;
@@ -636,7 +650,6 @@ input:-webkit-autofill {
 
     .form-input {
         width: 90%;
-
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -655,7 +668,8 @@ input:-webkit-autofill {
         align-items: center;
         flex-wrap: wrap;
     }
-    .menu-items {
+    .footer-menu {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -672,5 +686,7 @@ input:-webkit-autofill {
     }
     .contact-info {
         width: 90%;
+        margin:40px auto;
     }
+
 }
