@@ -1,6 +1,5 @@
 body {
     display: flex;
-    margin: 0;
     padding: 0;
     --accent-font: "Bilbo", cursive;
     --reg-font: "Montserrat", sans-serif;
@@ -14,6 +13,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 .phone-icon {
@@ -40,7 +40,6 @@ html {
 
 .header {
     margin: 0 auto;
-    /* width: 70%; */
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -70,7 +69,7 @@ html {
     flex-direction: row;
     justify-content: space-around;
     cursor: pointer;
-    flex: 2;
+    /* flex: 2; */
 }
 
 .menu-items > a {
@@ -89,6 +88,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
+    width: 100%;
     height: 800px;
     height: 95vh;
 }
@@ -370,6 +370,7 @@ html {
 }
 
 .swiper-container {
+    margin: 40px auto;
     width: 725px;
     height: 350px;
 }
@@ -382,6 +383,8 @@ html {
     display: flex;
     justify-content: center;
 }
+
+
 
 .review-container {
     display: flex;
@@ -399,7 +402,7 @@ html {
     line-height: 2rem;
 }
 
-.person-name{
+.person-name {
     font-size: 2rem;
     color: var(--red-color);
     font-family: var(--accent-font);
@@ -409,35 +412,6 @@ html {
     width: 40px;
     fill: var(--red-color);
 }
-
-
-/* 
-.review-page {
-    margin: 40px auto;
-    max-width: 625px;
-    display: flex;
-    align-items: center;
-    align-content: space-around;
-}
-*/
-
-/* .review {
-    line-height: 2rem;
-    text-align: center;
-} */
-
-
-/* .review-carousel {
-    border: 2px solid black;
-    width: 550px;
-    height: 330px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-} */
 
 .contact-page {
     margin: 40px auto;
@@ -496,7 +470,7 @@ html {
     width: 100%;
 }
 
-.application-form > div {
+.form-input {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -562,4 +536,141 @@ input:-webkit-autofill {
     fill: var(--grey-color);
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        margin: 0;
+    }
+
+    .header-contact-form {
+        display: none;
+    }
+
+    .catalog-preview {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+        grid-template-rows: repeat(3, minmax(180px, 1fr));
+    }
+
+    .description > ul {
+        padding-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .grid-row {
+        grid-row: 1/4;
+    }
+
+    .special-offer-page {
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+    }
+
+    .footer {
+        width: 75%;
+        justify-content: center;
+        align-items: baseline;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .menu-items {
+        padding: 0;
+    }
+    .menu-items > a {
+        margin: 10px;
+    }
+    .footer-icons {
+        width: 20px;
+        margin: 10px auto;
+    }
+    .contact-info {
+        width: 45%;
+    }
+}
+
+@media (max-width: 578px) {
+    .main-page {
+        background-position: bottom;
+    }
+    
+    .catalog-preview {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(170px, 1fr));
+        grid-template-rows: repeat(3, minmax(170px, 1fr));
+    }
+    .grid-row {
+        display: none;
+    }
+
+    .p-text {
+        width: 80%;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 450px;
+    }
+
+    .center-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .special-offer-page {
+        grid-template-columns: repeat(1, minmax(298px, 1fr));
+        grid-template-rows: repeat(2, minmax(350px, 1fr));
+    }
+    .speacial-offer-image {
+        grid-column: 1/2;
+        grid-rows: 2/3;
+    }
+
+    .application-page {
+    }
+
+    .form-input {
+        width: 90%;
+
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .input {
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-icons {
+        margin: 0em;
+        margin-bottom: 20px;
+        width: 25px;
+    }
+    .contact-background {
+        width: 100%;
+    }
+    .contact-info {
+        width: 90%;
+    }
 }

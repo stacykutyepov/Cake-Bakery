@@ -93,7 +93,6 @@ const resetApplicationForm = () => {
 const succesfullySent = (event) => {
     event.preventDefault();
     if (validEmail(emailInput.value)) {
-        console.log('checked');
         applicationText.style.color = "#9f0311";
         applicationText.textContent = "Thank you! Your Application Has Been Sent Succesfully!";
         resetApplicationForm();
@@ -104,7 +103,6 @@ const succesfullySent = (event) => {
     } else {
         wrongEmail.style.display = "flex";
     }
-    console.log('sent')
 }
 
 sendApplication.addEventListener('click', succesfullySent);
