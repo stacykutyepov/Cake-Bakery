@@ -86,7 +86,7 @@ html {
 }
 
 .main-page {
-    background-image: url(./src/img/strawberry.jpg);
+    background-image: url(../src/img/strawberry.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -106,7 +106,7 @@ html {
 .main-page-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     font-family: var(--accent-font);
     font-size: 4rem;
     letter-spacing: 0.4rem;
@@ -207,7 +207,7 @@ html {
 }
 
 .catalog-image {
-    background-image: url(./src/img/strawberry.jpg);
+    background-image: url(../src/img/strawberry.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -365,7 +365,7 @@ html {
 /* Review Swiper */
 
 .speacial-offer-image {
-    background-image: url(./src/img/special-offer.jpg);
+    background-image: url(../src/img/special-offer.jpg);
     background-size: cover;
     background-position: 40% 60%;
     grid-column: 2/4;
@@ -427,7 +427,7 @@ html {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    background-image: url(./src/img/contact-us2.jpg);
+    background-image: url(../src/img/contact-us2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
