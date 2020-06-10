@@ -13,3 +13,4 @@
   </br>
   </div>
   </div>
+  <p>Web Design by Vera Shaydorova</p>
