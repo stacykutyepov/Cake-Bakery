@@ -613,6 +613,7 @@ input:-webkit-autofill {
     }
 
     .catalog-preview {
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(2, minmax(150px, 1fr));
         grid-template-rows: repeat(3, minmax(150px, 1fr));
@@ -637,15 +638,13 @@ input:-webkit-autofill {
     }
 
     .special-offer-page {
+        width: 90%;
         grid-template-columns: repeat(1, minmax(298px, 1fr));
         grid-template-rows: repeat(2, minmax(350px, 1fr));
     }
     .speacial-offer-image {
         grid-column: 1/2;
         grid-rows: 2/3;
-    }
-
-    .application-page {
     }
 
     .form-input {
@@ -662,11 +661,12 @@ input:-webkit-autofill {
     }
 
     .footer {
-        width: 80%;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding: 0;
     }
     .footer-menu {
         display: flex;
