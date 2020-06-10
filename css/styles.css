@@ -141,12 +141,12 @@ html {
 
 .button-red {
     outline: none;
-
-    padding: 10px 70px;
+    padding: 20px 70px;
     margin-top: 20px;
     border: 1px solid var(--red-color);
     background-color: var(--red-color);
     color: var(--grey-color);
+    border-radius: 0;
 }
 
 .button-red:hover {
@@ -453,6 +453,7 @@ html {
 .contact-info > div > p {
     margin-left: 40px;
     line-height: 2rem;
+   
 }
 
 .contact-info > p:first-child {
@@ -540,18 +541,23 @@ input:-webkit-autofill {
 }
 
 @media (max-width: 992px) {
-    .header {
-        margin: 0;
-    }
-
+   
     .header-contact-form {
         display: none;
     }
+    .menu-items {
+        margin-left: 20px;
+        padding: 0;
+    }
+    .menu-items > a {
+        margin: 10px;
+    }
 
     .catalog-preview {
+        width: 90%;
         display: grid;
-        grid-template-columns: repeat(3, minmax(180px, 1fr));
-        grid-template-rows: repeat(3, minmax(180px, 1fr));
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        grid-template-rows: repeat(3, minmax(220px, 1fr));
     }
 
     .description > ul {
@@ -561,7 +567,7 @@ input:-webkit-autofill {
     }
 
     .swiper-container {
-        width: 100%;
+        width: 90%;
     }
 
     .grid-row {
@@ -569,6 +575,7 @@ input:-webkit-autofill {
     }
 
     .special-offer-page {
+        width: 90%;
         grid-template-columns: repeat(3, minmax(180px, 1fr));
     }
 
@@ -579,27 +586,30 @@ input:-webkit-autofill {
         align-content: center;
         flex-wrap: wrap;
     }
-    .menu-items {
-        padding: 0;
-    }
-    .menu-items > a {
-        margin: 10px;
-    }
+   
     .footer-icons {
         width: 20px;
         margin: 10px auto;
     }
+    .contact-page{
+        width: 90%;
+    }
     .contact-info {
         width: 45%;
+    }
+    
+    .application-page{
+        width: 90%;
     }
 }
 
 @media (max-width: 578px) {
     .header{
+        margin: 0;
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        align-items: center;
+        align-items: baseline;
         align-content: center;
         padding: 10px 40px;
     }
@@ -614,20 +624,20 @@ input:-webkit-autofill {
 
     .catalog-preview {
         width: 90%;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
-        grid-template-rows: repeat(3, minmax(150px, 1fr));
+        grid-template-columns: repeat(2, minmax(170px, 1fr));
+        grid-template-rows: repeat(3, minmax(170px, 1fr));
     }
+
     .grid-row {
         display: none;
     }
 
     .p-text {
-        width: 80%;
+        width: 75%;
     }
 
     .swiper-container {
-        width: 100%;
+        width: 90%;
         height: 450px;
     }
 
@@ -661,12 +671,12 @@ input:-webkit-autofill {
     }
 
     .footer {
+        padding: 40px 0;
         width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding: 0;
     }
     .footer-menu {
         display: flex;
@@ -684,9 +694,23 @@ input:-webkit-autofill {
     .contact-background {
         width: 100%;
     }
+
     .contact-info {
         width: 90%;
-        margin:40px auto;
+        margin: 60px auto;
+        padding-bottom: 20px;
     }
 
+    .cake-bakery{
+        margin: 0;
+    }
+
+}
+
+@media(max-width: 360px){
+    .catalog-preview {
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: repeat(3, minmax(150px, 1fr));
+    }
 }
