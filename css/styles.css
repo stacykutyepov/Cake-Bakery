@@ -654,7 +654,7 @@ input:-webkit-autofill {
     }
     .speacial-offer-image {
         grid-column: 1/2;
-        grid-rows: 2/3;
+        grid-row: 2/3;
     }
 
     .form-input {
