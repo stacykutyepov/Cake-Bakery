@@ -181,11 +181,14 @@ html {
     font-family: var(--accent-font);
     font-size: 2rem;
     letter-spacing: 0.2rem;
-    cursor: pointer;
     transition: 0.3sec;
 }
 
-.intro-text:hover {
+.cursor{
+    cursor: pointer;
+}
+
+.cursor:hover {
     color: var(--red-color);
 }
 

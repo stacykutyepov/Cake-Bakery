@@ -16,7 +16,6 @@ let pageNum = 0;
 
 const getData = async function (url) {
     const response = await fetch(url);
-
     if (!response.ok) {
         throw new Error(`Error is ${url}, status ${response.status}!`);
     }
@@ -41,8 +40,6 @@ const updateCatalogPreview = () => {
 
 const catalogFilter = (event) => {
     if (event.target.closest('.menu-item')) {
-
-
         const currentCatalog = event.target.innerText.toLowerCase();
         const currentCatalogItems = DATA.flat().filter(item => item.category.toLowerCase() == currentCatalog);
         updateCatalogPreview();
@@ -100,18 +97,15 @@ const succesfullySent = (event) => {
         setTimeout(() => {
             applicationText.textContent = "Application";
 
-        }, 3000)
+        }, 6000)
     } else {
         wrongEmail.style.display = "flex";
     }
 }
 
-sendApplication.addEventListener('click', succesfullySent);
-
-
 const init = () => {
-
     catalogMenu.addEventListener('click', catalogFilter);
+    sendApplication.addEventListener('click', succesfullySent);
 
     getData("./src/db/catalog.json")
         .then(function (data) {
