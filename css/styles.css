@@ -63,14 +63,13 @@ html {
     color: var(--red-color);
 }
 
-.phone-number {
-    font-weight: 600;
-}
 
-#phone-number:-webkit-any-link {
+#phone-number{
     color: black;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 600;
+
 }
 
 .menu-items {
