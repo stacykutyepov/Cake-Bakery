@@ -16,17 +16,21 @@ html {
     width: 100%;
 }
 
-.phone-icon {
+
+#phone-icon {
     margin: auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 20px;
     margin-right: 0.5rem;
+    width: 20px;
     cursor: pointer;
 }
+.phone-icon:hover path {
+    fill: var(--red-color);
+}
 
-.ig-icon {
-    background-image: url(./svg-icons/ig-color.svg);
+#ig-icon {
+    background-image: url(../svg-icons/ig-color.svg);
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -35,9 +39,7 @@ html {
     cursor: pointer;
 }
 
-.phone-icon:hover path {
-    fill: var(--red-color);
-}
+
 
 .header {
     margin: 0 auto;
@@ -63,6 +65,12 @@ html {
 
 .phone-number {
     font-weight: 600;
+}
+
+#phone-number:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .menu-items {

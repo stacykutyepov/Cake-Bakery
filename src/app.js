@@ -42,7 +42,8 @@ const updateCatalogPreview = () => {
 const catalogFilter = (event) => {
     if (event.target.closest('.menu-item')) {
 
-        const currentCatalog = event.toElement.innerText.toLowerCase();
+
+        const currentCatalog = event.target.innerText.toLowerCase();
         const currentCatalogItems = DATA.flat().filter(item => item.category.toLowerCase() == currentCatalog);
         updateCatalogPreview();
         currentPage.textContent = "01/";
